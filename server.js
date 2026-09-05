@@ -24,5 +24,5 @@ migrate()
   })
   .catch(err => {
     console.error('Migration failed, starting server anyway:', err);
-    app.listen(PORT, '0.0.0.0'() => console.log(`Server running on port ${PORT}`));
+    app.listen(PORT, '0.0.0.0',() => console.log(`Server running on port ${PORT}`));
   });
