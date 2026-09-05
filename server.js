@@ -6,7 +6,9 @@ const entriesRoutes = require('./routes/entries');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://kosiclement7-collab.github.io'
+}));
 app.use(express.json());
 
 app.get('/', (req, res) => res.send('Dashboard API is running.'));
