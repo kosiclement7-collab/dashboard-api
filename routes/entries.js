@@ -3,10 +3,7 @@ const router = express.Router();
 const pool = require('../db');
 const requireAuth = require('../middleware/auth');
 
-const express = require('express');
-const router = express.Router();
-const pool = require('../db');
-const requireAuth = require('../middleware/auth');
+
 
 // List all entries for the logged-in user, most recent first
 router.get('/entries', requireAuth, async (req, res) => {
